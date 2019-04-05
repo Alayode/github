@@ -5,10 +5,19 @@ import { TopReposComponent } from './top-repos/top-repos.component';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent, TopReposComponent],
+  declarations: [
+    AppComponent, 
+    TopReposComponent,
+   
+
+    NgbModule.forRoot(),
+
+  ],
   imports: [
-    CommonModule,
+    // CommonModule,
     AppRoutingModule
+    BrowserModule,
+    FormsModule 
   ]
 })
 export class AppModule { }
